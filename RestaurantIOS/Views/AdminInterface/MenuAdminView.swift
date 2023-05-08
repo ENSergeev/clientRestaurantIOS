@@ -54,9 +54,11 @@ struct MenuAdminView: View {
             .sheet(isPresented: $showProductView) {
                 AdminProductView()
             }
-//        onAppear{
-//            print(user?.login ?? "Пользователь не найден")
-//                }
+        
+       
+            .onAppear{
+            print(user?.login ?? "Пользователь не найден")
+                }
             }
     }
 
